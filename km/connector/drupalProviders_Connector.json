@@ -97,3 +97,184 @@
       ]      
   }
   }
+  "mappings": [
+    {
+      "header": "Primary Street 2",
+      "field": "address",
+      "subfieldPath": [
+        {
+          "name": "line2"
+        }
+      ],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.name.first",
+      "field": "firstName",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Primary Street 1",
+      "field": "address",
+      "subfieldPath": [
+        {
+          "name": "line1"
+        }
+      ],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.accepting_new_patients",
+      "field": "acceptingNewPatients",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.gender",
+      "field": "gender",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.image_url",
+      "field": "headshot",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.id",
+      "field": "entityId",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.name.last",
+      "field": "lastName",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.name.middle",
+      "field": "middleName",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.insurance_accepted",
+      "field": "insuranceAccepted",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Primary Certification",
+      "field": "certifications",
+      "subfieldPath": [
+        {
+          "index": 0
+        }
+      ],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.about_the_provider",
+      "field": "description",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Name",
+      "field": "name",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Third Certification",
+      "field": "certifications",
+      "subfieldPath": [
+        {
+          "index": 2
+        }
+      ],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.degrees[].name",
+      "field": "degrees",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Primary City",
+      "field": "address",
+      "subfieldPath": [
+        {
+          "name": "city"
+        }
+      ],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Primary State",
+      "field": "address",
+      "subfieldPath": [
+        {
+          "name": "region"
+        }
+      ],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Primary Zip Code",
+      "field": "address",
+      "subfieldPath": [
+        {
+          "name": "postalCode"
+        }
+      ],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.virtual_care_url",
+      "field": "telehealthUrl",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.npi",
+      "field": "npi",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "provider.languages",
+      "field": "languages",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Secondary Certification",
+      "field": "certifications",
+      "subfieldPath": [
+        {
+          "index": 1
+        }
+      ],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Primary Location Name",
+      "field": "officeName",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    }
+  ],
+  "comprehensiveModeConfig": {
+    "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
+    "actionOnMissingEntities": "UPDATE"
+  }
+}
