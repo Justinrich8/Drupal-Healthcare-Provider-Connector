@@ -94,9 +94,7 @@
           "header": "Specialty",
           "path": "attributes.field_type_staff"
         }
-      ]      
-  }
-  }
+      ],     
   "mappings": [
     {
       "header": "Primary Street 2",
@@ -277,4 +275,5 @@
     "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
     "actionOnMissingEntities": "UPDATE"
   }
+}
 }
