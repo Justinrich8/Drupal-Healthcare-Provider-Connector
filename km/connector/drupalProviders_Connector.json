@@ -1,0 +1,99 @@
+{
+  "$id": "drupalProviders_Connector",
+  "$schema": "https://schema.yext.com/config/km/connector/v4",
+  "displayName": "Drupal Providers Connector",
+  "entityTypes": ["healthcareProfessional"],
+  "source": {
+    "sourceConfig": {
+      "nativeSourceConfig": {
+        "source": "drupal",
+        "operation": "fetchPersonContent",
+        "inputs": {
+          "drupalDomain": "${{drupalDomain}}"
+      }
+      }
+    },
+    "selectors": [
+        {
+          "type": "JSON",
+          "header": "Title",
+          "path": "attributes.title"
+        },
+        {
+          "type": "JSON",
+          "header": "Full Name",
+          "path": "attributes.field_full_name"
+        },
+        {
+          "type": "JSON",
+          "header": "Credentials",
+          "path": "attributes.field_credentials"
+        },
+        {
+          "type": "JSON",
+          "header": "Description",
+          "path": "attributes.metatag[?(@.attributes.name=='description')].attributes.content"
+        },
+        {
+          "type": "JSON",
+          "header": "Canonical URL",
+          "path": "attributes.metatag[?(@.attributes.rel=='canonical')].attributes.href"
+        },
+        {
+          "type": "JSON",
+          "header": "Short Title",
+          "path": "attributes.metatag[?(@.attributes.name=='short_title')].attributes.content"
+        },
+        {
+          "type": "JSON",
+          "header": "Profile URL",
+          "path": "attributes.metatag[?(@.attributes.name=='url')].attributes.content"
+        },
+        {
+          "type": "JSON",
+          "header": "Staff Type",
+          "path": "attributes.field_type_staff"
+        },
+        {
+          "type": "JSON",
+          "header": "Language",
+          "path": "attributes.field_languages[0]"
+        },
+        {
+          "type": "JSON",
+          "header": "Rating Details",
+          "path": "attributes.field_provider_rating_details"
+        },
+        {
+          "type": "JSON",
+          "header": "Image",
+          "path": "relationships.field_image.data.id"
+        },
+        {
+          "type": "JSON",
+          "header": "Related Locations",
+          "path": "relationships.field_related_locations.data[0].id"
+        },
+        {
+          "type": "JSON",
+          "header": "NPI Number",
+          "path": "attributes.field_npi_number"
+        },
+        {
+          "type": "JSON",
+          "header": "Education (Undergraduate)",
+          "path": "attributes.field_edu_undergrad.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Education (Additional)",
+          "path": "attributes.field_edu_additional.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Specialty",
+          "path": "attributes.field_type_staff"
+        }
+      ]      
+  }
+  }
